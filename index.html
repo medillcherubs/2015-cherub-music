@@ -94,73 +94,17 @@ z-index: 0;
   max-width: 1000px;
   margin: 0 auto;
 }
-iframe {​.bubble 
-{
-position: relative;
-display:inline-block;
-max-width:1000px;
-min-height:1.5em;
-padding: 20px;
-background: #EEEEEE;
-border: #DDDDDD solid 1px;
--webkit-border-radius: 20px;
--moz-border-radius: 20px;
-border-radius: 20px;
-    font-family: "Open Sans";
-    font-weight: 400;
-margin-bottom:20px;
-  margin-right: 20px;
-  margin-top:40px;
-}
-
-
-.bubble:after 
-{
-content: "";
-position: absolute;
-bottom: -15px;
-left: 60%;
-border-style: solid;
-border-width: 15px 15px 0;
-border-color: #EEEEEE transparent;
-display: block;
-width: 0;
-z-index: 1;
-}
-
-.bubble:before 
-{
-content: "";
-position: absolute;
-bottom: -17px;
-left: calc(60% - 1px) ;
-border-style: solid;
-border-width: 16px 16px 0;
-border-color: #DDDDDD transparent;
-display: block;
-width: 0;
-z-index: 0;
-}
-
-.lede
-{
-  font-family: "Arial";
-     word-wrap: break-word;
-   width: 1050px;
-}
-.ending
-{
-  font-family: "Arial";
-}
-
-.all{
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
 iframe {
     width: 100%;
   max-width: 1000px;
 }
 
 </style>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pym/0.4.5/pym.min.js"></script>
+    <script> 
+      $(function(){
+        var pymChild = new pym.Child({polling: 500});
+      });
+    </script>
+
